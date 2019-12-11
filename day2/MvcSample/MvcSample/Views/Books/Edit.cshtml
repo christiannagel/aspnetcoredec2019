@@ -1,0 +1,16 @@
+﻿@model Book
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form method="post" action="/Books/Edit">
+    <input type="text" id="title" name="title" />
+    <br />
+    <input type="text" id="publisher" name="publisher" />
+    <br />
+    <button type="submit">submit</button>
+
+
+</form>
+
+
