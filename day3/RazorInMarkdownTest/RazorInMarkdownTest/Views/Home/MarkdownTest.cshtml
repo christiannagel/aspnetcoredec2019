@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewData["Title"] = "MarkdownTest";
+}
+@addTagHelper *, CNi.AspNetMarkdown
+
+<h1>MarkdownTest</h1>
+
+<markdown>
+# heading 1
+
+## heading 2
+
+### heading 3
+
+text **bold** and *italic*
+
+```csharp
+public void Foo()
+{
+    Console.WriteLine("Foo");    
+}
+```
+
+@{ 
+    var x = 3;
+    var y = 39;
+    var z = x + y;
+}
+
+<div>@z</div>
+
+</markdown>
+
